@@ -114,6 +114,44 @@ int main()
     }
 
 
+    // Loops    ------
+
+
+    printf("\n\n****** Loops ******");
+
+    int z=7;
+    printf("\nFor Loop");
+    for(int l=1; l<=10; l++)
+    {
+        printf("\n%d * %d = %d",z,l,z*l);
+      
+    }
+
+    printf("\n\n");
+
+
+    int y=3;
+    printf("\nWhile Loop");
+    int s=1;
+    while(s<=10)
+    {
+        printf("\n%d * %d = %d",y,s,y*s);
+        s++;     
+    }
+
+
+    printf("\n\n");
+
+
+    int x=12;
+    printf("\nDo-While Loop");
+    int m=1;
+    do
+    {
+        printf("\n%d * %d = %d",x,m,x*m);
+        m++;     
+    }
+    while(m<=10);
 
 
 
