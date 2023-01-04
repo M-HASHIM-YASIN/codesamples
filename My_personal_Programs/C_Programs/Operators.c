@@ -33,6 +33,16 @@ int main()
     printf("The The Answer is %d.\n",a2>=b2);
     printf("The The Answer is %d.\n",a2<=b2);
 
+
+
+    printf("\n\n******* Logical Operators******\n");
+    int a3 =0, b3=1;
+    
+    printf("The The Answer is %d.\n",a3 && b3);
+    printf("The The Answer is %d.\n",a3 || b3);
+    printf("The The Answer is %d.\n",!b3);
+    printf("The The Answer is %d.\n",!a3);
+    printf("The The Answer is %d.\n",!a3 && b3);
     
 
 
