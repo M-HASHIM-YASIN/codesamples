@@ -68,6 +68,54 @@ int main()
     
     // MISC Operaor: & , * , ?
 
+    // ****** Conditional Operators ******
+
+    printf("\n\n******* Conditional Operators******\n");
+
+    // There are 5 Major types of Conditional Operators:
+    //     1. If Condition
+    //     2. If else Condition
+    //     3. If else if Condition
+    //     4. Nested If else Condition
+    //     5. Switch Statement
+
+    int marks;
+    printf("Enter your Marks: ");
+    scanf("%d", &marks);
+
+    if(marks < 40)
+    {
+        printf("You are failed");
+    }
+
+    else
+    {
+        if(marks > 100)
+        {
+            printf("You are Briliant");
+        }
+
+        else if(marks > 80)
+        {
+            printf("A Grade");
+        }
+        else if(marks > 60)
+        {
+            printf("B Grade");
+        }
+        else if(marks >= 50)
+        {
+            printf("C Grade");
+        }
+        else
+        {
+            printf("Satisfied Marks");
+        }
+    }
+
+
+
+
 
 
     return 0;
