@@ -46,7 +46,6 @@ int main()
     
 
 
-
     printf("\n\n******* BitWise Operators******\n");
     int a4 =19;  // 0010011 
     int b4=87;   // 1010111
@@ -58,6 +57,17 @@ int main()
     printf("The Bitwise LEFT SHIFT Operator is %d.\n",a4 << b4);
     printf("The Bitwise RIGHT SHIFT Operator is %d.\n",a4 >> b4);
     
+
+   printf("\n\n******* Assignment Operators******\n");
+    int a5 = 9;
+    
+    printf("The Answer is %d.\n",a5+=7);
+    printf("The Answer is %d.\n",a5-=9);
+    printf("The Answer is %d.\n",a5*=7);
+    printf("The Answer is %d.\n",a5%=7);
+    
+
+
 
     return 0;
 }
