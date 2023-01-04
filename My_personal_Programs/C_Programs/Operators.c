@@ -22,5 +22,19 @@ int main()
     printf("The Decrement of a1 and b1 is %d.\n",--b1);
     printf("The Increment of a1 and b1 is %d.\n",++a1-b1);
 
+
+    printf("\n\n******* Relational Operators******\n");
+    int a2 =3, b2=5;
+    
+    printf("The The Answer is %d.\n",a2==b2);
+    printf("The The Answer is %d.\n",a2!=b2);
+    printf("The The Answer is %d.\n",a2>b2);
+    printf("The The Answer is %d.\n",a2<b2);
+    printf("The The Answer is %d.\n",a2>=b2);
+    printf("The The Answer is %d.\n",a2<=b2);
+
+    
+
+
     return 0;
 }
