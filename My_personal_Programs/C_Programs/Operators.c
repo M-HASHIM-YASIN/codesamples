@@ -46,5 +46,18 @@ int main()
     
 
 
+
+    printf("\n\n******* BitWise Operators******\n");
+    int a4 =19;  // 0010011 
+    int b4=87;   // 1010111
+    
+    printf("The Bitwise AND Operator is %d.\n",a4 & b4);
+    printf("The Bitwise OR Operator is %d.\n",a4 | b4);
+    printf("The Bitwise XOR Operator is %d.\n",a4 ^ b4);
+    printf("The Bitwise ONE'S Complement Operator is %d.\n",~a4);
+    printf("The Bitwise LEFT SHIFT Operator is %d.\n",a4 << b4);
+    printf("The Bitwise RIGHT SHIFT Operator is %d.\n",a4 >> b4);
+    
+
     return 0;
 }
