@@ -42,7 +42,7 @@ int main()
     printf("The The Answer is %d.\n",a3 || b3);
     printf("The The Answer is %d.\n",!b3);
     printf("The The Answer is %d.\n",!a3);
-    printf("The The Answer is %d.\n",!a3 && b3);
+    printf("The The Answer is %d.\n",!a3 && !b3);
     
 
 
