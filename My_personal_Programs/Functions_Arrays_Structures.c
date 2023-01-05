@@ -1,30 +1,69 @@
 #include<stdio.h>
 #include<string.h>
 
-int marks(int a, int b)
+// int marks(int a, int b)
+// {
+//     return a+b;
+// }
+
+
+// int mark(int x, int y, int z)
+// {
+//     return x+y+z;
+// }
+
+
+// float marksavg(float a, float b)
+// {
+//     return (a+b)/2;
+// }
+
+
+// float markavg(float x, float y, float z)
+// {
+//     return (x+y+z)/3;
+// }
+
+
+
+struct Books
 {
-    return a+b;
+    char name[50];
+    char author[50];
+    int price;
+} book;
+
+void strprint(struct Books bk)
+{
+    printf("Book Name is %s\n",bk.name);
+    printf("Author Name is %s\n",bk.author);
+    printf("Price is %d\n",bk.price);
 }
 
 
-int mark(int x, int y, int z)
-{
-    return x+y+z;
-}
-
-
-float marksavg(float a, float b)
-{
-    return (a+b)/2;
-}
-
-
-float markavg(float x, float y, float z)
-{
-    return (x+y+z)/3;
-}
 int main()
 {
+    // Structure
+    printf("\n****** Structure ******\n");
+    struct Books bk1, bk2;
+
+    strcpy(bk1.name,"C Programming Language.");
+    strcpy(bk1.author,"Dennis Richie.");
+    bk1.price = 750;
+    strprint(bk1);
+    printf("\n");
+    
+    strcpy(bk2.name,"Think and Grow Rich.");
+    strcpy(bk2.author,"Nepolian Hill.");
+    bk2.price = 1050;
+    strprint(bk2);
+    printf("\n");
+
+
+
+
+
+
     // Funstion Calling
     // printf("\n****** Functions Calling ******\n");
     // printf("The Sum of 2 Numbers is %d.\n",marks(47,63));
@@ -73,21 +112,25 @@ int main()
 
 
     // Strings (copy, merge and Compare etc)
-    printf("\n\n****** String ******\n");
+    // printf("\n\n****** String ******\n");
 
-    char str1[4] = {'M','H','Y','\0'};
-    char str2[40] , str3[50];
+    // char str1[4] = {'M','H','Y','\0'};
+    // char str2[40] , str3[50];
 
-    // String Copy
-    strcpy(str2 , str1);
-    printf("%s\n",str2);
+    // // String Copy
+    // strcpy(str2 , str1);
+    // printf("%s\n",str2);
 
-    // String Merge
-    strcpy(str1 , "Hashim ");
-    strcpy(str3 , "Yasin");
-    strcat(str1 , str3);
+    // // String Merge
+    // strcpy(str1 , "Hashim ");
+    // strcpy(str3 , "Yasin");
+    // strcat(str1 , str3);
     
-    printf("%s",str1);
+    // printf("%s",str1);
+
+
+
+
     printf("\n");
     return 0;
 }
