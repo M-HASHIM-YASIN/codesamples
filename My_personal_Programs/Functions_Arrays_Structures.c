@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 int marks(int a, int b)
 {
@@ -33,27 +34,27 @@ int main()
 
 
     // ****** Pointer ******
-    printf("\n****** Pointers ******\n\n");
-    printf("Pointer - (Call by refference)\n");
+    // printf("\n****** Pointers ******\n\n");
+    // printf("Pointer - (Call by refference)\n");
 
-    int a = 125;
-    int b;
-    printf("The Value of a is %d before pointer.\n",a);
+    // int a = 125;
+    // int b;
+    // printf("The Value of a is %d before pointer.\n",a);
 
-    int* ptr1 = NULL;
-    int* ptr2 = NULL;
-    int c;
-    printf("Enter the value of c: ");
-    scanf("%d",&c);
-    if(ptr1)
-    {
-        printf("Pointer is not null");
-    }
-    ptr1 = &a; // &a means that address of a
-    ptr2 = &b;
-    *ptr1 = c;
-    *ptr2 = 700 + *ptr1;
-    printf("The Value of a is %d after pointer.\n",b);
+    // int* ptr1 = NULL;
+    // int* ptr2 = NULL;
+    // int c;
+    // printf("Enter the value of c: ");
+    // scanf("%d",&c);
+    // if(ptr1)
+    // {
+    //     printf("Pointer is not null");
+    // }
+    // ptr1 = &a; // &a means that address of a
+    // ptr2 = &b;
+    // *ptr1 = c;
+    // *ptr2 = 700 + *ptr1;
+    // printf("The Value of a is %d after pointer.\n",b);
 
 
     // ****** Arrays ******
@@ -71,10 +72,22 @@ int main()
     // }
 
 
+    // Strings (copy, merge and Compare etc)
+    printf("\n\n****** String ******\n");
 
+    char str1[4] = {'M','H','Y','\0'};
+    char str2[40] , str3[50];
 
+    // String Copy
+    strcpy(str2 , str1);
+    printf("%s\n",str2);
 
-
+    // String Merge
+    strcpy(str1 , "Hashim ");
+    strcpy(str3 , "Yasin");
+    strcat(str1 , str3);
+    
+    printf("%s",str1);
     printf("\n");
     return 0;
 }
